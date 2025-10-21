@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    outline: none;
+}
+
+
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.file {
+    color: lightgreen;
+}
+
+.share {
+    color: lightblue;
+    transition: 0.5s;
+}
+
+
+.title {
+    text-align: center;
+    cursor: default;
+}
+
+.title h1:hover {
+    .file {
+        color: lightblue;
+    }
+
+    .share {
+        color: lightgreen;
+    }
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadbox {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+form {
+    display: flex;
+    gap: 25px;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 8px;
+
+}
+
+input {
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+input:hover {
+    background-color: #3a3a3a;
+}
+
+button {
+    background-color: aliceblue;
+    border-radius: 4px;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #d4d4d4;
+}
+
+
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    background-image: linear-gradient(to right, #4caf50, #81c784);
+    border-radius: 4px;
+    transition: width 0.3s;
+}

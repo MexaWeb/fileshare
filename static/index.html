@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file sharing service</title>
+    <link rel="stylesheet" href="/static/css/global.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="uploadbox">
+            <div class="title">
+                <h1><span class="file">file</span><span class="share">share</span></h1>
+                <h5>a file sharing service made by mexa</h5>
+            </div>
+            
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="file" id="fileInput" required>
+                <button type="submit">Upload File</button>
+            </form>
+
+            <div class="progress-bar" id="progressBar"></div>
+            
+
+        </div>
+    </main>
+    <script src="/static/js/index.js"></script>
+
+</body>
+
+</html>

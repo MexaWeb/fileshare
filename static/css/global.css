@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.file {
+    color: lightgreen;
+}
+
+.share {
+    color: lightblue;
+    transition: 0.5s;
+}
+
+
+
+.title {
+    cursor: default;
+}
+
+.title h1:hover {
+    .file {
+        color: lightblue;
+    }
+
+    .share {
+        color: lightgreen;
+    }
+}
+
+main {
+    height: 100vh;
+}
