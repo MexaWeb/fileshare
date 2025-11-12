@@ -7,6 +7,9 @@
     <title>file sharing service</title>
     <link rel="stylesheet" href="/static/css/global.css">
     <link rel="stylesheet" href="/static/css/style2.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -27,8 +30,12 @@
             <img id="image" alt="" style="display: none;">
             <video id="videoplayer" controls style="display: none;"></video>
             <audio id="audioplayer" controls style="display: none;"></audio>
-            <!-- <button onclick="copydownloadlink()">copy download link</button> -->
-            <a class="download-button" href="#" download>Download File</a>
+            
+            <div class="buttoncontainer">
+                <a class="download-button" href="#" download><i class="fa-solid fa-file-arrow-down"></i> Download File</a>
+                <button class="copy-link-button" onclick="copydownloadlink()"><i class="fa-solid fa-copy"></i></button>
+            </div>
+            
         </div>
     </main>
     <script src="/static/js/viewfile.js"></script>

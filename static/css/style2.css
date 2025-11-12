@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 
@@ -41,16 +41,18 @@ header {
     gap: 20px;
 }
 
-.download-button {
+.download-button, .copy-link-button {
+    cursor: pointer;
     display: inline-block;
     padding: 10px 20px;
     background-color: lightgreen;
     color: #121212;
     border: none;
-    border-radius: 5px;
     text-decoration: none;
     transition: 0.3s;
+    border-radius: 10px 0px 0px 10px;
 }
+
 .download-button:hover {
     transform: scale(1.05);
 }
@@ -59,4 +61,25 @@ header {
     max-width: 80%;
     max-height: 500px;
     margin-bottom: 20px;
+}
+
+.copy-link-button {
+    color: lightgreen;
+    background-color: #121212;
+    border: 1px solid lightgreen;
+
+    border-radius: 0px 10px 10px 0px;
+}
+
+.copy-link-button:hover {
+    transform: scale(1.05);
+}
+
+.buttoncontainer {
+    display: flex;
+    gap: 15px;
+}
+
+h2 {
+    text-align: center;
 }

@@ -7,9 +7,24 @@
     outline: none;
 }
 
+
+:root {
+    --color1: #121212;
+    --color2: #1e1e1e;
+    
+    --color3: #2c2c2c;
+    --color4: #3a3a3a;
+
+    --color5: #f0f8ff;
+    --color6: #d4d4d4;
+
+    --textcolor: #ffffff;
+}
+
+
 body {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: var(--color1);
+    color: var(--textcolor);
 }
 
 .file {
@@ -37,6 +52,39 @@ body {
     }
 }
 
-main {
+body {
     height: 100vh;
+}
+
+.themebutton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    font-size: 18px;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+
+    background-color: var(--color2);
+    color: var(--textcolor);
+
+    &:hover {
+        background-color: var(--color3);
+    }
+
+    .fa-sun, .fa-moon {
+        display: none;
+    }
+}
+
+.themebutton.dark {
+    .fa-sun {
+        display: block;
+    }
+}
+
+.themebutton.light {
+    .fa-moon {
+        display: block;
+    }
 }

@@ -8,7 +8,7 @@ let fileUUID
 let originalFilename
 fetch('/api/getfileinfo/' + uuid)
     .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok');
+        if (!response.ok) throw new Error('response error');
         return response.json();
     })
     .then(data => {
@@ -39,8 +39,18 @@ fetch('/api/getfileinfo/' + uuid)
 
 
 
+
+
 function copydownloadlink() {
-    link = new URL(`/api/getfile/${fileUUID}`, window.location.origin).href;
-    navigator.clipboard.writeText(link);
-    alert("Link copied to clipboard!");
+    link = new URL(`/view/${fileUUID}`, window.location.origin).href;
+    console.log(link);
+    const textarea = document.createElement('textarea');
+    textarea.value = link;
+    document.body.appendChild(textarea)
+    textarea.focus();
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea)
+
+    alert("link copied to clipboard!");
 }
