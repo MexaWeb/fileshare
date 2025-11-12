@@ -59,11 +59,16 @@ def generate_filename():
 def save_file():
     if 'file' not in request.files:
         return 'No file part'
-        
+
     file = request.files['file']
     if file.filename == '':
         return 'No selected file'
-    
+
+
+    with open("./storage/filenames.json", "r+") as f:
+        content = f.read()
+        if content == "":
+            f.write("{}")
 
     ext = os.path.splitext(secure_filename(file.filename))[1]
     filename = generate_filename()
@@ -151,4 +156,4 @@ def api_get_file_info(file_uuid):
     }
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000, debug=False)
+    app.run(host="0.0.0.0", port=8080, debug=False)
