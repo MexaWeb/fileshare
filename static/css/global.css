@@ -11,13 +11,14 @@
 :root {
     --color1: #121212;
     --color2: #1e1e1e;
-    
+
     --color3: #2c2c2c;
     --color4: #3a3a3a;
 
     --color5: #f0f8ff;
     --color6: #d4d4d4;
 
+    --color7: #232323;
     --textcolor: #ffffff;
 }
 
@@ -57,6 +58,7 @@ body {
 }
 
 .themebutton {
+    padding: 15px 20px;
     position: fixed;
     bottom: 0;
     right: 0;
