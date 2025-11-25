@@ -26,6 +26,7 @@
 body {
     background-color: var(--color1);
     color: var(--textcolor);
+    height: 100vh;
 }
 
 .file {
@@ -45,7 +46,7 @@ body {
 
 .title h1:hover {
     .file {
-        color: lightblue;
+        color: lab(83.81% -10.89 -11.49);
     }
 
     .share {
@@ -96,4 +97,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: var(--color1);
 }
+

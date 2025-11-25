@@ -3,13 +3,14 @@ let currentTheme = "dark"
 
 function toggletheme(themebutton) {
     themebutton.classList.remove(currentTheme)
+    document.body.classList.remove(currentTheme)
     if (currentTheme == "dark") {
         currentTheme = "light";
     } else {
         currentTheme = "dark";
     }
     themebutton.classList.add(currentTheme)
-
+    document.body.classList.add(currentTheme)
 
     if (currentTheme == "dark") {
         rootElement.style.setProperty('--color1', '#121212')
