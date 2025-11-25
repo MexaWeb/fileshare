@@ -49,3 +49,10 @@ document.addEventListener('mousemove', function(e) {
     draw(mousepos)
 })
 
+document.addEventListener('mouseleave', function (e) {
+    draw()
+})
+
+window.addEventListener('resize', function() {
+    draw()
+})
